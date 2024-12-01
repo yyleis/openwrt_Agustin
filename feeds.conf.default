@@ -6,6 +6,6 @@ src-git nss_packages https://github.com/AgustinLorenzo/nss-packages.git;main_nss
 src-git sqm_scripts_nss https://github.com/qosmio/sqm-scripts-nss.git
 
 #src-git kenzo https://github.com/kenzok8/openwrt-packages.git
-src-git smpackages https://github.com/kenzok8/small-packages
+src-git smpackage https://github.com/kenzok8/small-package
 #src-git passwall https://github.com/xiaorouji/openwrt-passwall.git
 src-git homeproxy  https://github.com/lxiaya/openwrt-homeproxy.git
