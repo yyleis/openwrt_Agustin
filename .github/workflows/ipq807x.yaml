@@ -97,12 +97,13 @@ jobs:
               run: echo "NOW=$(date +%F-%H%M)" >> $GITHUB_ENV
 
             - name: Create a release
-              uses: "ncipollo/release-action@v1"
+              #uses: "ncipollo/release-action@v1"
+              uses: actions/upload-artifact@v4
               with:
-                name: "Updated prebuilt images (NSS-WiFi) ${{ env.NOW }}"
+                name: "Updated qnap301w (NSS-WiFi) ${{ env.NOW }}"
                 commit: "main_nss"
                 tag: "ipq807x-nsswifi-${{ env.NOW }}"
                 generateReleaseNotes: true
                 makeLatest: true
-                artifacts: bin/targets/qualcommax/ipq807x/*
+                path: bin/targets/qualcommax/ipq807x/*
                 token: "${{ secrets.GITHUB_TOKEN }}"
