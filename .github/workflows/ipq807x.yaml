@@ -106,5 +106,5 @@ jobs:
                 tag: "ipq807x-nsswifi-${{ env.NOW }}"
                 generateReleaseNotes: true
                 makeLatest: true
-                path: bin/targets/qualcommax/ipq807x/*
+                artifacts: bin/targets/qualcommax/ipq807x/*
                 token: "${{ secrets.GITHUB_TOKEN }}"
