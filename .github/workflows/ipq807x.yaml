@@ -98,8 +98,8 @@ jobs:
               run: echo "NOW=$(date +%F-%H%M)" >> $GITHUB_ENV
 
             - name: Create a release
-              #uses: "ncipollo/release-action@v1"
-              uses: actions/upload-artifact@v4
+              uses: "ncipollo/release-action@v1"
+              #uses: actions/upload-artifact@v4
               with:
                 name: "Updated qnap301w (NSS-WiFi) ${{ env.NOW }}"
                 commit: "main_nss"
